@@ -3,6 +3,7 @@ $(document).ready(function() {
 	$("form#searchRequest").submit(start);
 	$(":input").attr("disabled",false);
 	$("div#progressBar").progressBar();
+	$("table#dataTable").tablesorter({sortList: [[0,0]]});
 })
 
 var state = {
@@ -18,15 +19,26 @@ function round1(num) {
 function start() {
 	//alert("Start");
 	var query = $("#query:input").attr("value");
-	var lower = parseInt($("#lower:input").attr("value"));
-	var upper = parseInt($("#upper:input").attr("value"));
-	var step = parseInt($("#step:input").attr("value"));
+	var lower = parseFloat($("#lower:input").attr("value"));
+	var upper = parseFloat($("#upper:input").attr("value"));
+	var step = parseFloat($("#step:input").attr("value"));
+	if (step <= 0) {
+		alert("Step must not be negative");
+		return false;
+	};
 
 	//alert(lower + "," + upper + "," + step);
 
-	window.state["numRequests"] = Math.floor((upper - lower + 1)/step);
+	var numRequests = Math.floor((upper - lower)/step) + 1;
+	if (numRequests >= 150) {
+		alert("Too many steps requested (" + numRequests + "): Maximum is 150");
+		return false;
+	}
+	window.state["numRequests"] = Math.floor((upper - lower)/step) + 1;
 	window.state["dataReceived"] = [];
 	window.state["query"] = query;
+
+	$("table#dataTable tbody").html("");
 
 	$(":input").attr("disabled",true);
 	$("div#progressBar").progressBar(0);
@@ -51,9 +63,24 @@ function start() {
 function searchCallback(data) {
 	//alert(window.state["dataReceived"].length);
 	window.state["dataReceived"].unshift([data["iterator"],data["numResults"]]);
+	$("table#dataTable tbody").append(
+		$(document.createElement("tr")).append(
+			$(document.createElement("td")).append(
+				$(document.createElement("a")).attr(
+					"href","http://google.com/search?q=" + window["state"].query.replace("<x>",data["iterator"])
+				).text(data["iterator"])
+			)
+		).append(
+			$(document.createElement("td")).text(data["numResults"])
+		)
+	);
+	
+	$("table#dataTable").trigger("update");
+	$("table#dataTable").trigger("sorton",[[[0,0]]]);
 
 	$("div#progressBar").progressBar(100.0 * window.state["dataReceived"].length / window.state["numRequests"]);
 	if (window.state["dataReceived"].length == window.state["numRequests"]) {
+		$("div#progressBar").progressBar(100);
 
 		dataReceived = window.state["dataReceived"].sort(function(a,b) {return a[0]-b[0]});
 		$(":input").attr("disabled",false);

@@ -6,7 +6,9 @@
 	<title>SearchGraph</title>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 	<%= javascript_include_tag "searchgraph" %>
+	<%= javascript_include_tag "jquery.tablesorter" %>
 	<%= javascript_include_tag "jquery.progressbar" %>
+	<%= stylesheet_link_tag "tablesorter" %>
 	<%= stylesheet_link_tag "index" %>
 </head>
 <body>
@@ -23,8 +25,8 @@
 		</div>
 		<div id="request">
 			<form id="searchRequest">
-				Query: <input type="text" id="query" value="I have a <x> inch penis" /><br/>
-				Range: <input type="text" id="lower" value="1" /> to <input type="text" id="upper" value="20" />, step <input type="text" id="step" value="1" /><br/>
+				Query: <input type="text" id="query" value="&quot;Final Fantasy &lt;x&gt; is the best&quot;" size="70" /><br/>
+				Range: <input type="text" id="lower" value="1" /> to <input type="text" id="upper" value="13" /> step <input type="text" id="step" value="1" /><br/>
 				<input type="submit" id="start" value="Start">
 			</form>
 		</div>
@@ -36,13 +38,16 @@
 				<img id="chartImg" src="http://chart.apis.google.com/chart?cht=s&chtt=%22I+have%20%3Cx%3E%20dogs%22&chxt=x,x,y,y&chxl=1:|x|3:|%26+Results&chxp=1,50|3,50&chxr=0,1,20,1|2,0,1180000,118000&chd=t:0,5.26,10.53,15.79,21.05,26.32,31.58,36.84,42.11,47.37,52.63,57.89,63.16,68.42,73.68,78.95,84.21,89.47,94.74,100|0.4,100,46.95,20.42,9.24,38.14,20.68,14.15,9.66,11.36,4.49,5.43,2.36,5.98,2.61,1.39,2.47,1.02,0.61,7.57&chs=400x400&chg=5.26,10" />
 			</div>
 			<div id="dataDisplay">
-				<table id="dataTable">
+				<table id="dataTable" class="tablesorter">
 					<thead>
 						<tr>
 							<th>x</th><th># Results</th>
 						</tr>
 					</thead>
 					<tbody>
+						<tr style="display:none">
+							<td>1.0</td><td>1.0</td>
+						</tr>
 					</tbody>
 				</table>
 			</div>
