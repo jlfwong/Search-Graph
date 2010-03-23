@@ -5,128 +5,50 @@
 <head>
 	<title>SearchGraph</title>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-	<script type="text/javascript">
-
-$(document).ready(function() {
-	$("#start:input").click(start);
-	$("form#searchRequest").submit(start);
-	$(":input").attr("disabled",false);
-})
-
-var state = {
-	numRequests: 0,
-	dataReceived: [],
-	query: ""
-};
-
-function round1(num) {
-	return Math.round(num*100)/100.0;
-}
-
-function start() {
-	var query = $("#query:input").attr("value");
-	var lower = parseInt($("#lower:input").attr("value"));
-	var upper = parseInt($("#upper:input").attr("value"));
-	var step = parseInt($("#step:input").attr("value"));
-
-	//alert(lower + "," + upper + "," + step);
-
-	window.state["numRequests"] = Math.floor((upper - lower + 1)/step);
-	window.state["dataReceived"] = [];
-	window.state["query"] = query;
-
-	$(":input").attr("disabled",true);
-
-	for (var i = lower; i <= upper; i+= step) {
-		if (typeof console != undefined) {
-			console.log("search/google/web/?q="+ query.replace("<x>",i));
-		}
-
-		$.get("search/google/web/",
-			{
-				q: query.replace("<x>",i),
-				it: i
-			},
-			searchCallback, 
-			"json"
-		);
-	}
-	return false;
-}
-
-function searchCallback(data) {
-	//alert(window.state["dataReceived"].length);
-	window.state["dataReceived"].unshift([data["iterator"],data["numResults"]]);
-	if (window.state["dataReceived"].length == window.state["numRequests"]) {
-		dataReceived = window.state["dataReceived"].sort(function(a,b) {return a[0]-b[0]});
-		$(":input").attr("disabled",false);
-
-		/*
-		cht = s
-		chxt = x,y
-		chxr = 0,<minx> - 1,<maxx> + 1 | 1, 0, <maxy>*1.1
-		chd = t: <xlist>|<ylist>
-		chs = 200x200
-
-		*/
-
-		var xlist = "";
-		var ylist = "";
-		var minx = dataReceived[0][0];
-		var maxx = dataReceived[dataReceived.length - 1][0];
-		var maxy = 0;
-
-		for (var j = 0; j < dataReceived.length; j++) {
-
-			if (parseInt(dataReceived[j][1]) > maxy) {
-				maxy = dataReceived[j][1];
-			}
-		}
-
-		maxy = Math.max(1,maxy);
-
-		//var width = Math.max(200,Math.min((maxx - minx) * 20,500))
-		var width = 400;
-		var height = 400;
-
-		for (var j = 0; j < dataReceived.length; j++) {
-			if (xlist != "" && ylist != "") {
-				xlist += ",";
-				ylist += ",";
-			}
-			xlist += round1(parseFloat(dataReceived[j][0] - minx)/(maxx - minx) * 100);
-			ylist += round1(parseFloat(dataReceived[j][1])/maxy * 100)
-		}
-
-		var chartURI = "http://chart.apis.google.com/chart?";
-		chartURI += "cht=s";
-		chartURI += "&chtt=" + window.state["query"].replace(" ","+")
-		chartURI += "&chxt=x,x,y,y";
-		var xstep = Math.max(parseInt((maxx - minx)/20),1);
-		chartURI += "&chxl=1:|x|3:|%26+Results&chxp=1,50|3,50";
-		chartURI += "&chxr=0," + minx + "," + maxx + "," + xstep + "|2,0," + maxy + "," + maxy/10
-		chartURI += "&chd=t:" + xlist + "|" + ylist;
-		chartURI += "&chs=" + width + "x" + height;
-		chartURI += "&chg=" + round1(100.0 / ((maxx - minx)/xstep)) + ",10";
-
-		$("div#response").append(
-			$(document.createElement("img")).attr("src",chartURI)
-		);
-	}
-}
-
-	</script>
+	<%= javascript_include_tag "searchgraph" %>
+	<%= javascript_include_tag "jquery.progressbar" %>
+	<%= stylesheet_link_tag "index" %>
 </head>
 <body>
-	<div id="request">
-		<form id="searchRequest">
-			Query: <input type="text" id="query" value="I have a <x> inch penis" /><br/>
-			Range: <input type="text" id="lower" value="1" /> to <input type="text" id="upper" value="20" />, step <input type="text" id="step" value="1" /><br/>
-			<input type="submit" id="start" value="Start">
-		</form>
+<div id="preload" style="display:none">
+	<img src="images/progressbar.gif" />
+	<img src="images/progressbg_red.gif" />
+	<img src="images/progressbg_orange.gif" />
+	<img src="images/progressbg_yellow.gif" />
+</div>
+<div id="container">
+	<div id="content">
+		<div id="header">
+			SearchGraph
+		</div>
+		<div id="request">
+			<form id="searchRequest">
+				Query: <input type="text" id="query" value="I have a <x> inch penis" /><br/>
+				Range: <input type="text" id="lower" value="1" /> to <input type="text" id="upper" value="20" />, step <input type="text" id="step" value="1" /><br/>
+				<input type="submit" id="start" value="Start">
+			</form>
+		</div>
+		<div id="progress">
+			<div id="progressBar"></div>
+		</div>
+		<div id="response">
+			<div id="chart">
+				<img id="chartImg" src="http://chart.apis.google.com/chart?cht=s&chtt=%22I+have%20%3Cx%3E%20dogs%22&chxt=x,x,y,y&chxl=1:|x|3:|%26+Results&chxp=1,50|3,50&chxr=0,1,20,1|2,0,1180000,118000&chd=t:0,5.26,10.53,15.79,21.05,26.32,31.58,36.84,42.11,47.37,52.63,57.89,63.16,68.42,73.68,78.95,84.21,89.47,94.74,100|0.4,100,46.95,20.42,9.24,38.14,20.68,14.15,9.66,11.36,4.49,5.43,2.36,5.98,2.61,1.39,2.47,1.02,0.61,7.57&chs=400x400&chg=5.26,10" />
+			</div>
+			<div id="dataDisplay">
+				<table id="dataTable">
+					<thead>
+						<tr>
+							<th>x</th><th># Results</th>
+						</tr>
+					</thead>
+					<tbody>
+					</tbody>
+				</table>
+			</div>
+		</div>
 	</div>
-	<div id="response">
-	</div>
+</div>
 </body>
 </html>
 

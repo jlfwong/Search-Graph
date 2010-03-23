@@ -1,0 +1,65 @@
+body {
+	background-color: #55d;
+}
+
+div#container {
+	text-align: center;	
+}
+
+div#content {
+	width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid black;
+	background-color: white;
+}
+
+div#header {
+	text-align: center;
+	font-size: 400%;
+}
+
+div#request {
+	border-bottom: 1px solid black;
+}
+
+div#progress {
+	border-bottom: 1px solid black;
+	padding: 10px;
+}
+
+div#response {
+	/*height: 450px;*/
+	overflow: auto;
+	/*background-color: #5d5;*/
+}
+
+div#chart {
+	background-color: white;
+	border-right: 1px solid black;
+	float: left;
+	width: 445px;
+	/*height: 400px;*/
+	/* width: 100%;*/
+	/* margin-right: -250px; */
+	/*margin-right: 220px;*/
+}
+
+div#dataDisplay {
+	float: right;
+	height: 400px;
+	overflow: auto;
+	width: 250px;
+	text-align: center;
+	/*margin: 10px;*/
+}
+
+div#dataDisplay table {
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+div#dataDisplay table,th,tr,td {
+	border-collapse: collapse;
+	border: 2px ridge black;
+}

@@ -22809,3 +22809,2113 @@ Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 01:35:44) [G
   Parameters: {"it"=>"10", "q"=>"\"I have 10 dogs\""}
 Rendering search/google_web
 Completed in 331ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=%22I+have+10+dogs%22&it=10]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 01:44:41) [GET]
+Rendering home/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 01:44:43) [GET]
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-23 01:45:15) [GET]
+
+
+ActionController::RoutingError (No route matches "/javascripts" with {:method=>:get}):
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/route_set.rb:386:in `recognize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:182:in `handle_request'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/mongrel.rb:64
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 01:45:48) [GET]
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 01:45:56) [GET]
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 01:46:05) [GET]
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 01:46:06) [GET]
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 01:46:06) [GET]
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 01:46:06) [GET]
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 01:46:07) [GET]
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 01:46:07) [GET]
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 01:46:08) [GET]
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 01:46:11) [GET]
+  Parameters: {"it"=>"1", "q"=>"I have a 1 inch penis"}
+Rendering search/google_web
+Completed in 415ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+1+inch+penis&it=1]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 01:46:11) [GET]
+  Parameters: {"it"=>"2", "q"=>"I have a 2 inch penis"}
+Rendering search/google_web
+Completed in 507ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+2+inch+penis&it=2]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 01:46:12) [GET]
+  Parameters: {"it"=>"3", "q"=>"I have a 3 inch penis"}
+Rendering search/google_web
+Completed in 437ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+3+inch+penis&it=3]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 01:46:12) [GET]
+  Parameters: {"it"=>"4", "q"=>"I have a 4 inch penis"}
+Rendering search/google_web
+Completed in 398ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+4+inch+penis&it=4]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 01:46:13) [GET]
+  Parameters: {"it"=>"5", "q"=>"I have a 5 inch penis"}
+Rendering search/google_web
+Completed in 440ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+5+inch+penis&it=5]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 01:46:13) [GET]
+  Parameters: {"it"=>"6", "q"=>"I have a 6 inch penis"}
+Rendering search/google_web
+Completed in 430ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+6+inch+penis&it=6]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 01:46:14) [GET]
+  Parameters: {"it"=>"7", "q"=>"I have a 7 inch penis"}
+Rendering search/google_web
+Completed in 568ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+7+inch+penis&it=7]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 01:46:14) [GET]
+  Parameters: {"it"=>"8", "q"=>"I have a 8 inch penis"}
+Rendering search/google_web
+Completed in 422ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+8+inch+penis&it=8]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 01:46:15) [GET]
+  Parameters: {"it"=>"9", "q"=>"I have a 9 inch penis"}
+Rendering search/google_web
+Completed in 477ms (View: 3, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+9+inch+penis&it=9]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 01:46:15) [GET]
+  Parameters: {"it"=>"10", "q"=>"I have a 10 inch penis"}
+Rendering search/google_web
+Completed in 404ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+10+inch+penis&it=10]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 01:46:16) [GET]
+  Parameters: {"it"=>"11", "q"=>"I have a 11 inch penis"}
+Rendering search/google_web
+Completed in 388ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+11+inch+penis&it=11]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 01:46:16) [GET]
+  Parameters: {"it"=>"12", "q"=>"I have a 12 inch penis"}
+Rendering search/google_web
+Completed in 369ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+12+inch+penis&it=12]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 01:46:17) [GET]
+  Parameters: {"it"=>"13", "q"=>"I have a 13 inch penis"}
+Rendering search/google_web
+Completed in 382ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+13+inch+penis&it=13]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 01:46:17) [GET]
+  Parameters: {"it"=>"14", "q"=>"I have a 14 inch penis"}
+Rendering search/google_web
+Completed in 455ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+14+inch+penis&it=14]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 01:46:18) [GET]
+  Parameters: {"it"=>"15", "q"=>"I have a 15 inch penis"}
+Rendering search/google_web
+Completed in 389ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+15+inch+penis&it=15]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 01:46:18) [GET]
+  Parameters: {"it"=>"16", "q"=>"I have a 16 inch penis"}
+Rendering search/google_web
+Completed in 424ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+16+inch+penis&it=16]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 01:46:19) [GET]
+  Parameters: {"it"=>"17", "q"=>"I have a 17 inch penis"}
+Rendering search/google_web
+Completed in 372ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+17+inch+penis&it=17]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 01:46:19) [GET]
+  Parameters: {"it"=>"18", "q"=>"I have a 18 inch penis"}
+Rendering search/google_web
+Completed in 425ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+18+inch+penis&it=18]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 01:46:20) [GET]
+  Parameters: {"it"=>"19", "q"=>"I have a 19 inch penis"}
+Rendering search/google_web
+Completed in 469ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+19+inch+penis&it=19]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 01:46:20) [GET]
+  Parameters: {"it"=>"20", "q"=>"I have a 20 inch penis"}
+Rendering search/google_web
+Completed in 374ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+20+inch+penis&it=20]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 01:47:21) [GET]
+  Parameters: {"it"=>"1", "q"=>"\"I have 1 dogs\""}
+Rendering search/google_web
+Completed in 512ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=%22I+have+1+dogs%22&it=1]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 01:47:21) [GET]
+  Parameters: {"it"=>"2", "q"=>"\"I have 2 dogs\""}
+Rendering search/google_web
+Completed in 281ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=%22I+have+2+dogs%22&it=2]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 01:47:22) [GET]
+  Parameters: {"it"=>"3", "q"=>"\"I have 3 dogs\""}
+Rendering search/google_web
+Completed in 387ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=%22I+have+3+dogs%22&it=3]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 01:47:22) [GET]
+  Parameters: {"it"=>"4", "q"=>"\"I have 4 dogs\""}
+Rendering search/google_web
+Completed in 274ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=%22I+have+4+dogs%22&it=4]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 01:47:22) [GET]
+  Parameters: {"it"=>"5", "q"=>"\"I have 5 dogs\""}
+Rendering search/google_web
+Completed in 340ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=%22I+have+5+dogs%22&it=5]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 01:47:23) [GET]
+  Parameters: {"it"=>"6", "q"=>"\"I have 6 dogs\""}
+Rendering search/google_web
+Completed in 284ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=%22I+have+6+dogs%22&it=6]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 01:47:23) [GET]
+  Parameters: {"it"=>"7", "q"=>"\"I have 7 dogs\""}
+Rendering search/google_web
+Completed in 308ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=%22I+have+7+dogs%22&it=7]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 01:47:24) [GET]
+  Parameters: {"it"=>"8", "q"=>"\"I have 8 dogs\""}
+Rendering search/google_web
+Completed in 343ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=%22I+have+8+dogs%22&it=8]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 01:47:24) [GET]
+  Parameters: {"it"=>"9", "q"=>"\"I have 9 dogs\""}
+Rendering search/google_web
+Completed in 264ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=%22I+have+9+dogs%22&it=9]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 01:47:24) [GET]
+  Parameters: {"it"=>"10", "q"=>"\"I have 10 dogs\""}
+Rendering search/google_web
+Completed in 397ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=%22I+have+10+dogs%22&it=10]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 01:47:25) [GET]
+  Parameters: {"it"=>"11", "q"=>"\"I have 11 dogs\""}
+Rendering search/google_web
+Completed in 469ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=%22I+have+11+dogs%22&it=11]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 01:47:25) [GET]
+  Parameters: {"it"=>"12", "q"=>"\"I have 12 dogs\""}
+Rendering search/google_web
+Completed in 606ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=%22I+have+12+dogs%22&it=12]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 01:47:26) [GET]
+  Parameters: {"it"=>"13", "q"=>"\"I have 13 dogs\""}
+Rendering search/google_web
+Completed in 535ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=%22I+have+13+dogs%22&it=13]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 01:47:27) [GET]
+  Parameters: {"it"=>"14", "q"=>"\"I have 14 dogs\""}
+Rendering search/google_web
+Completed in 492ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=%22I+have+14+dogs%22&it=14]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 01:47:27) [GET]
+  Parameters: {"it"=>"15", "q"=>"\"I have 15 dogs\""}
+Rendering search/google_web
+Completed in 1668ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=%22I+have+15+dogs%22&it=15]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 01:47:29) [GET]
+  Parameters: {"it"=>"16", "q"=>"\"I have 16 dogs\""}
+Rendering search/google_web
+Completed in 378ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=%22I+have+16+dogs%22&it=16]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 01:47:29) [GET]
+  Parameters: {"it"=>"17", "q"=>"\"I have 17 dogs\""}
+Rendering search/google_web
+Completed in 772ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=%22I+have+17+dogs%22&it=17]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 01:47:30) [GET]
+  Parameters: {"it"=>"18", "q"=>"\"I have 18 dogs\""}
+Rendering search/google_web
+Completed in 410ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=%22I+have+18+dogs%22&it=18]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 01:47:31) [GET]
+  Parameters: {"it"=>"19", "q"=>"\"I have 19 dogs\""}
+Rendering search/google_web
+Completed in 383ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=%22I+have+19+dogs%22&it=19]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 01:47:31) [GET]
+  Parameters: {"it"=>"20", "q"=>"\"I have 20 dogs\""}
+Rendering search/google_web
+Completed in 517ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=%22I+have+20+dogs%22&it=20]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 01:48:36) [GET]
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 01:49:55) [GET]
+Rendering home/index
+
+
+ActionView::TemplateError (undefined method `stylesheet_include_tag' for #<ActionView::Base:0x103e0ffc0>) on line #9 of app/views/home/index.html.erb:
+6: 	<title>SearchGraph</title>
+7: 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+8: 	<%= javascript_include_tag "searchgraph" %>
+9: 	<%= stylesheet_include_tag "index" %>
+10: </head>
+11: <body>
+12: <div id="content">
+
+    app/views/home/index.html.erb:9
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/renderable.rb:39:in `send'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/renderable.rb:39:in `render'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/template.rb:73:in `render_template'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_view/base.rb:256:in `render'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1174:in `render_for_file'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:896:in `render_without_benchmark'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:868:in `render_without_benchmark'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1248:in `default_render'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1254:in `perform_action_without_filters'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:617:in `call_filters'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.2.2/lib/active_record/query_cache.rb:8:in `cache'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `send'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/session_management.rb:134:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:392:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:76:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `synchronize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/mongrel.rb:64
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendered /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_trace (154.7ms)
+Rendered /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_request_and_response (0.7ms)
+Rendering /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 01:50:56) [GET]
+Rendering home/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 01:53:19) [GET]
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 01:53:28) [GET]
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 01:53:32) [GET]
+Rendering home/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 01:54:05) [GET]
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 01:54:45) [GET]
+Rendering home/index
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 01:55:11) [GET]
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 01:56:17) [GET]
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 01:57:03) [GET]
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 01:57:27) [GET]
+Rendering home/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 01:57:45) [GET]
+Rendering home/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 01:58:05) [GET]
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 01:58:16) [GET]
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 01:58:28) [GET]
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 01:58:35) [GET]
+Rendering home/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 01:58:38) [GET]
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 01:58:57) [GET]
+Rendering home/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 01:59:00) [GET]
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:00:08) [GET]
+Rendering home/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:00:12) [GET]
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:00:35) [GET]
+Rendering home/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:00:37) [GET]
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:01:09) [GET]
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:01:16) [GET]
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:04:36) [GET]
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:04:50) [GET]
+Rendering home/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:05:02) [GET]
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:05:09) [GET]
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:05:15) [GET]
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:05:32) [GET]
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:05:44) [GET]
+Rendering home/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:05:56) [GET]
+Rendering home/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:07:43) [GET]
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:08:04) [GET]
+Rendering home/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:08:06) [GET]
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:08:26) [GET]
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:08:33) [GET]
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:09:45) [GET]
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:10:05) [GET]
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:10:43) [GET]
+Rendering home/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:10:53) [GET]
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:11:02) [GET]
+Rendering home/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:11:18) [GET]
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:11:51) [GET]
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:12:07) [GET]
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:12:15) [GET]
+Rendering home/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:12:41) [GET]
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:12:52) [GET]
+Rendering home/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:13:02) [GET]
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:13:07) [GET]
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:13:13) [GET]
+Rendering home/index
+Completed in 76ms (View: 75, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:13:20) [GET]
+Rendering home/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:13:20) [GET]
+Rendering home/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:13:33) [GET]
+Rendering home/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:13:36) [GET]
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:13:44) [GET]
+Rendering home/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:14:04) [GET]
+Rendering home/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:14:15) [GET]
+Rendering home/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:14:19) [GET]
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:14:32) [GET]
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:14:39) [GET]
+Rendering home/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:15:03) [GET]
+Rendering home/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:15:08) [GET]
+Rendering home/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:15:22) [GET]
+Rendering home/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:15:53) [GET]
+Rendering home/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:16:15) [GET]
+Rendering home/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:16:17) [GET]
+Rendering home/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:16:24) [GET]
+Rendering home/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:16:42) [GET]
+Rendering home/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:16:47) [GET]
+Rendering home/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:17:05) [GET]
+Rendering home/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:17:17) [GET]
+Rendering home/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:18:26) [GET]
+Rendering home/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:18:49) [GET]
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:19:26) [GET]
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:19:31) [GET]
+Rendering home/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:19:35) [GET]
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:22:14) [GET]
+Rendering home/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:30:28) [GET]
+Rendering home/index
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:31:54) [GET]
+Rendering home/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:33:28) [GET]
+Rendering home/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:33:45) [GET]
+Rendering home/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:33:54) [GET]
+Rendering home/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:34:34) [GET]
+Rendering home/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:37:22) [GET]
+Rendering home/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:37:23) [GET]
+Rendering home/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:37:31) [GET]
+Rendering home/index
+Completed in 10ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:38:12) [GET]
+Rendering home/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:38:16) [GET]
+  Parameters: {"it"=>"1", "q"=>"I have a 1 inch penis"}
+Rendering search/google_web
+Completed in 507ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+1+inch+penis&it=1]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:38:16) [GET]
+  Parameters: {"it"=>"2", "q"=>"I have a 2 inch penis"}
+Rendering search/google_web
+Completed in 473ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+2+inch+penis&it=2]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:38:17) [GET]
+  Parameters: {"it"=>"3", "q"=>"I have a 3 inch penis"}
+Rendering search/google_web
+Completed in 689ms (View: 4, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+3+inch+penis&it=3]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:38:18) [GET]
+  Parameters: {"it"=>"4", "q"=>"I have a 4 inch penis"}
+Rendering search/google_web
+Completed in 625ms (View: 3, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+4+inch+penis&it=4]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:38:18) [GET]
+  Parameters: {"it"=>"5", "q"=>"I have a 5 inch penis"}
+Rendering search/google_web
+Completed in 408ms (View: 3, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+5+inch+penis&it=5]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:38:19) [GET]
+  Parameters: {"it"=>"6", "q"=>"I have a 6 inch penis"}
+Rendering search/google_web
+Completed in 443ms (View: 3, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+6+inch+penis&it=6]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:38:19) [GET]
+  Parameters: {"it"=>"7", "q"=>"I have a 7 inch penis"}
+Rendering search/google_web
+Completed in 452ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+7+inch+penis&it=7]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:38:20) [GET]
+  Parameters: {"it"=>"8", "q"=>"I have a 8 inch penis"}
+Rendering search/google_web
+Completed in 574ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+8+inch+penis&it=8]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:38:21) [GET]
+  Parameters: {"it"=>"9", "q"=>"I have a 9 inch penis"}
+Rendering search/google_web
+Completed in 595ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+9+inch+penis&it=9]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:38:21) [GET]
+  Parameters: {"it"=>"10", "q"=>"I have a 10 inch penis"}
+Rendering search/google_web
+Completed in 510ms (View: 3, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+10+inch+penis&it=10]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:38:22) [GET]
+  Parameters: {"it"=>"11", "q"=>"I have a 11 inch penis"}
+Rendering search/google_web
+Completed in 841ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+11+inch+penis&it=11]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:38:23) [GET]
+  Parameters: {"it"=>"12", "q"=>"I have a 12 inch penis"}
+Rendering search/google_web
+Completed in 391ms (View: 4, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+12+inch+penis&it=12]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:38:23) [GET]
+  Parameters: {"it"=>"13", "q"=>"I have a 13 inch penis"}
+Rendering search/google_web
+Completed in 409ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+13+inch+penis&it=13]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:38:24) [GET]
+  Parameters: {"it"=>"14", "q"=>"I have a 14 inch penis"}
+Rendering search/google_web
+Completed in 453ms (View: 3, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+14+inch+penis&it=14]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:38:25) [GET]
+  Parameters: {"it"=>"15", "q"=>"I have a 15 inch penis"}
+Rendering search/google_web
+Completed in 486ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+15+inch+penis&it=15]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:38:25) [GET]
+  Parameters: {"it"=>"16", "q"=>"I have a 16 inch penis"}
+Rendering search/google_web
+Completed in 443ms (View: 3, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+16+inch+penis&it=16]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:38:26) [GET]
+  Parameters: {"it"=>"17", "q"=>"I have a 17 inch penis"}
+Rendering search/google_web
+Completed in 548ms (View: 3, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+17+inch+penis&it=17]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:38:26) [GET]
+  Parameters: {"it"=>"18", "q"=>"I have a 18 inch penis"}
+Rendering search/google_web
+Completed in 428ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+18+inch+penis&it=18]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:38:27) [GET]
+  Parameters: {"it"=>"19", "q"=>"I have a 19 inch penis"}
+Rendering search/google_web
+Completed in 446ms (View: 3, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+19+inch+penis&it=19]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:38:27) [GET]
+  Parameters: {"it"=>"20", "q"=>"I have a 20 inch penis"}
+Rendering search/google_web
+Completed in 554ms (View: 5, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+20+inch+penis&it=20]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:38:30) [GET]
+Rendering home/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:39:29) [GET]
+Rendering home/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:39:33) [GET]
+  Parameters: {"it"=>"1", "q"=>"I have a 1 inch penis"}
+Rendering search/google_web
+Completed in 620ms (View: 5, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+1+inch+penis&it=1]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:39:33) [GET]
+  Parameters: {"it"=>"2", "q"=>"I have a 2 inch penis"}
+Rendering search/google_web
+Completed in 463ms (View: 5, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+2+inch+penis&it=2]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:39:34) [GET]
+  Parameters: {"it"=>"3", "q"=>"I have a 3 inch penis"}
+Rendering search/google_web
+Completed in 626ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+3+inch+penis&it=3]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:39:34) [GET]
+  Parameters: {"it"=>"4", "q"=>"I have a 4 inch penis"}
+Rendering search/google_web
+Completed in 429ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+4+inch+penis&it=4]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:39:35) [GET]
+  Parameters: {"it"=>"5", "q"=>"I have a 5 inch penis"}
+Rendering search/google_web
+Completed in 1017ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+5+inch+penis&it=5]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:39:36) [GET]
+  Parameters: {"it"=>"6", "q"=>"I have a 6 inch penis"}
+Rendering search/google_web
+Completed in 378ms (View: 3, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+6+inch+penis&it=6]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:39:37) [GET]
+  Parameters: {"it"=>"7", "q"=>"I have a 7 inch penis"}
+Rendering search/google_web
+Completed in 354ms (View: 3, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+7+inch+penis&it=7]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:39:37) [GET]
+  Parameters: {"it"=>"8", "q"=>"I have a 8 inch penis"}
+Rendering search/google_web
+Completed in 438ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+8+inch+penis&it=8]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:39:38) [GET]
+  Parameters: {"it"=>"9", "q"=>"I have a 9 inch penis"}
+Rendering search/google_web
+Completed in 590ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+9+inch+penis&it=9]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:39:38) [GET]
+  Parameters: {"it"=>"10", "q"=>"I have a 10 inch penis"}
+Rendering search/google_web
+Completed in 840ms (View: 3, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+10+inch+penis&it=10]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:39:39) [GET]
+  Parameters: {"it"=>"11", "q"=>"I have a 11 inch penis"}
+Rendering search/google_web
+Completed in 385ms (View: 5, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+11+inch+penis&it=11]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:39:40) [GET]
+  Parameters: {"it"=>"12", "q"=>"I have a 12 inch penis"}
+Rendering search/google_web
+Completed in 374ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+12+inch+penis&it=12]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:39:40) [GET]
+  Parameters: {"it"=>"13", "q"=>"I have a 13 inch penis"}
+Rendering search/google_web
+Completed in 350ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+13+inch+penis&it=13]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:39:41) [GET]
+  Parameters: {"it"=>"14", "q"=>"I have a 14 inch penis"}
+Rendering search/google_web
+Completed in 352ms (View: 3, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+14+inch+penis&it=14]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:39:41) [GET]
+  Parameters: {"it"=>"15", "q"=>"I have a 15 inch penis"}
+Rendering search/google_web
+Completed in 524ms (View: 4, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+15+inch+penis&it=15]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:39:42) [GET]
+  Parameters: {"it"=>"16", "q"=>"I have a 16 inch penis"}
+Rendering search/google_web
+Completed in 591ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+16+inch+penis&it=16]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:39:42) [GET]
+  Parameters: {"it"=>"17", "q"=>"I have a 17 inch penis"}
+Rendering search/google_web
+Completed in 334ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+17+inch+penis&it=17]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:39:43) [GET]
+  Parameters: {"it"=>"18", "q"=>"I have a 18 inch penis"}
+Rendering search/google_web
+Completed in 375ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+18+inch+penis&it=18]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:39:43) [GET]
+  Parameters: {"it"=>"19", "q"=>"I have a 19 inch penis"}
+Rendering search/google_web
+Completed in 432ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+19+inch+penis&it=19]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:39:44) [GET]
+  Parameters: {"it"=>"20", "q"=>"I have a 20 inch penis"}
+Rendering search/google_web
+Completed in 622ms (View: 4, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+20+inch+penis&it=20]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:40:07) [GET]
+Rendering home/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:40:17) [GET]
+Rendering home/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:42:17) [GET]
+Rendering home/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-23 02:42:17) [GET]
+
+
+ActionController::RoutingError (No route matches "/images/progressbar_orange.gif" with {:method=>:get}):
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/route_set.rb:386:in `recognize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:182:in `handle_request'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/mongrel.rb:64
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-23 02:42:17) [GET]
+
+
+ActionController::RoutingError (No route matches "/images/progressbar_yellow.gif" with {:method=>:get}):
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/route_set.rb:386:in `recognize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:182:in `handle_request'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/mongrel.rb:64
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-23 02:42:18) [GET]
+
+
+ActionController::RoutingError (No route matches "/images/progressbar_red.gif" with {:method=>:get}):
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/route_set.rb:386:in `recognize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:182:in `handle_request'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/mongrel.rb:64
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:42:21) [GET]
+Rendering home/index
+Completed in 13ms (View: 11, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-23 02:42:22) [GET]
+
+
+ActionController::RoutingError (No route matches "/images/progressbar_red.gif" with {:method=>:get}):
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/route_set.rb:386:in `recognize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:182:in `handle_request'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/mongrel.rb:64
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-23 02:42:22) [GET]
+
+
+ActionController::RoutingError (No route matches "/images/progressbar_orange.gif" with {:method=>:get}):
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/route_set.rb:386:in `recognize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:182:in `handle_request'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/mongrel.rb:64
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-23 02:42:22) [GET]
+
+
+ActionController::RoutingError (No route matches "/images/progressbar_yellow.gif" with {:method=>:get}):
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/route_set.rb:386:in `recognize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:182:in `handle_request'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/mongrel.rb:64
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:42:29) [GET]
+Rendering home/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-23 02:42:29) [GET]
+
+
+ActionController::RoutingError (No route matches "/images/progressbar_red.gif" with {:method=>:get}):
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/route_set.rb:386:in `recognize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:182:in `handle_request'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/mongrel.rb:64
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-23 02:42:30) [GET]
+
+
+ActionController::RoutingError (No route matches "/images/progressbar_orange.gif" with {:method=>:get}):
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/route_set.rb:386:in `recognize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:182:in `handle_request'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/mongrel.rb:64
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-23 02:42:30) [GET]
+
+
+ActionController::RoutingError (No route matches "/images/progressbar_yellow.gif" with {:method=>:get}):
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/routing/route_set.rb:386:in `recognize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:182:in `handle_request'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/mongrel.rb:64
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:42:32) [GET]
+  Parameters: {"it"=>"1", "q"=>"I have a 1 inch penis"}
+Rendering search/google_web
+Completed in 463ms (View: 4, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+1+inch+penis&it=1]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:42:33) [GET]
+  Parameters: {"it"=>"2", "q"=>"I have a 2 inch penis"}
+Rendering search/google_web
+Completed in 593ms (View: 9, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+2+inch+penis&it=2]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:42:33) [GET]
+  Parameters: {"it"=>"3", "q"=>"I have a 3 inch penis"}
+Rendering search/google_web
+Completed in 921ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+3+inch+penis&it=3]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:42:34) [GET]
+  Parameters: {"it"=>"4", "q"=>"I have a 4 inch penis"}
+Rendering search/google_web
+Completed in 359ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+4+inch+penis&it=4]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:42:35) [GET]
+  Parameters: {"it"=>"5", "q"=>"I have a 5 inch penis"}
+Rendering search/google_web
+Completed in 435ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+5+inch+penis&it=5]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:42:35) [GET]
+  Parameters: {"it"=>"6", "q"=>"I have a 6 inch penis"}
+Rendering search/google_web
+Completed in 401ms (View: 9, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+6+inch+penis&it=6]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:42:36) [GET]
+  Parameters: {"it"=>"7", "q"=>"I have a 7 inch penis"}
+Rendering search/google_web
+Completed in 620ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+7+inch+penis&it=7]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:42:36) [GET]
+  Parameters: {"it"=>"8", "q"=>"I have a 8 inch penis"}
+Rendering search/google_web
+Completed in 495ms (View: 6, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+8+inch+penis&it=8]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:42:37) [GET]
+  Parameters: {"it"=>"9", "q"=>"I have a 9 inch penis"}
+Rendering search/google_web
+Completed in 688ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+9+inch+penis&it=9]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:42:38) [GET]
+  Parameters: {"it"=>"10", "q"=>"I have a 10 inch penis"}
+Rendering search/google_web
+Completed in 382ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+10+inch+penis&it=10]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:42:38) [GET]
+  Parameters: {"it"=>"11", "q"=>"I have a 11 inch penis"}
+Rendering search/google_web
+Completed in 374ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+11+inch+penis&it=11]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:42:39) [GET]
+  Parameters: {"it"=>"12", "q"=>"I have a 12 inch penis"}
+Rendering search/google_web
+Completed in 441ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+12+inch+penis&it=12]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:42:39) [GET]
+  Parameters: {"it"=>"13", "q"=>"I have a 13 inch penis"}
+Rendering search/google_web
+Completed in 545ms (View: 4, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+13+inch+penis&it=13]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:42:40) [GET]
+  Parameters: {"it"=>"14", "q"=>"I have a 14 inch penis"}
+Rendering search/google_web
+Completed in 365ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+14+inch+penis&it=14]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:42:40) [GET]
+  Parameters: {"it"=>"15", "q"=>"I have a 15 inch penis"}
+Rendering search/google_web
+Completed in 498ms (View: 3, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+15+inch+penis&it=15]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:42:41) [GET]
+  Parameters: {"it"=>"16", "q"=>"I have a 16 inch penis"}
+Rendering search/google_web
+Completed in 449ms (View: 3, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+16+inch+penis&it=16]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:42:42) [GET]
+  Parameters: {"it"=>"17", "q"=>"I have a 17 inch penis"}
+Rendering search/google_web
+Completed in 632ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+17+inch+penis&it=17]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:42:42) [GET]
+  Parameters: {"it"=>"18", "q"=>"I have a 18 inch penis"}
+Rendering search/google_web
+Completed in 342ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+18+inch+penis&it=18]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:42:43) [GET]
+  Parameters: {"it"=>"19", "q"=>"I have a 19 inch penis"}
+Rendering search/google_web
+Completed in 586ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+19+inch+penis&it=19]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:42:43) [GET]
+  Parameters: {"it"=>"20", "q"=>"I have a 20 inch penis"}
+Rendering search/google_web
+Completed in 506ms (View: 6, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+20+inch+penis&it=20]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:43:39) [GET]
+Rendering home/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:43:42) [GET]
+  Parameters: {"it"=>"1", "q"=>"I have a 1 inch penis"}
+Rendering search/google_web
+Completed in 583ms (View: 3, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+1+inch+penis&it=1]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:43:43) [GET]
+  Parameters: {"it"=>"2", "q"=>"I have a 2 inch penis"}
+Rendering search/google_web
+Completed in 553ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+2+inch+penis&it=2]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:43:44) [GET]
+  Parameters: {"it"=>"3", "q"=>"I have a 3 inch penis"}
+Rendering search/google_web
+Completed in 383ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+3+inch+penis&it=3]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:43:44) [GET]
+  Parameters: {"it"=>"4", "q"=>"I have a 4 inch penis"}
+Rendering search/google_web
+Completed in 421ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+4+inch+penis&it=4]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:43:45) [GET]
+  Parameters: {"it"=>"5", "q"=>"I have a 5 inch penis"}
+Rendering search/google_web
+Completed in 412ms (View: 7, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+5+inch+penis&it=5]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:43:46) [GET]
+  Parameters: {"it"=>"6", "q"=>"I have a 6 inch penis"}
+Rendering search/google_web
+Completed in 707ms (View: 5, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+6+inch+penis&it=6]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:43:46) [GET]
+  Parameters: {"it"=>"7", "q"=>"I have a 7 inch penis"}
+Rendering search/google_web
+Completed in 510ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+7+inch+penis&it=7]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:43:47) [GET]
+  Parameters: {"it"=>"8", "q"=>"I have a 8 inch penis"}
+Rendering search/google_web
+Completed in 526ms (View: 4, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+8+inch+penis&it=8]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:43:47) [GET]
+  Parameters: {"it"=>"9", "q"=>"I have a 9 inch penis"}
+Rendering search/google_web
+Completed in 370ms (View: 5, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+9+inch+penis&it=9]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:43:48) [GET]
+  Parameters: {"it"=>"10", "q"=>"I have a 10 inch penis"}
+Rendering search/google_web
+Completed in 405ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+10+inch+penis&it=10]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:43:49) [GET]
+  Parameters: {"it"=>"11", "q"=>"I have a 11 inch penis"}
+Rendering search/google_web
+Completed in 371ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+11+inch+penis&it=11]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:43:49) [GET]
+  Parameters: {"it"=>"12", "q"=>"I have a 12 inch penis"}
+Rendering search/google_web
+Completed in 372ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+12+inch+penis&it=12]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:43:49) [GET]
+  Parameters: {"it"=>"13", "q"=>"I have a 13 inch penis"}
+Rendering search/google_web
+Completed in 627ms (View: 6, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+13+inch+penis&it=13]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:43:50) [GET]
+  Parameters: {"it"=>"14", "q"=>"I have a 14 inch penis"}
+Rendering search/google_web
+Completed in 414ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+14+inch+penis&it=14]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:43:51) [GET]
+  Parameters: {"it"=>"15", "q"=>"I have a 15 inch penis"}
+Rendering search/google_web
+Completed in 487ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+15+inch+penis&it=15]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:43:51) [GET]
+  Parameters: {"it"=>"16", "q"=>"I have a 16 inch penis"}
+Rendering search/google_web
+Completed in 545ms (View: 13, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+16+inch+penis&it=16]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:43:52) [GET]
+  Parameters: {"it"=>"17", "q"=>"I have a 17 inch penis"}
+Rendering search/google_web
+Completed in 349ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+17+inch+penis&it=17]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:43:52) [GET]
+  Parameters: {"it"=>"18", "q"=>"I have a 18 inch penis"}
+Rendering search/google_web
+Completed in 427ms (View: 3, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+18+inch+penis&it=18]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:43:53) [GET]
+  Parameters: {"it"=>"19", "q"=>"I have a 19 inch penis"}
+Rendering search/google_web
+Completed in 406ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+19+inch+penis&it=19]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:43:53) [GET]
+  Parameters: {"it"=>"20", "q"=>"I have a 20 inch penis"}
+Rendering search/google_web
+Completed in 354ms (View: 4, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+20+inch+penis&it=20]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:44:07) [GET]
+  Parameters: {"it"=>"1", "q"=>"\"I have a 1 inch penis\""}
+Rendering search/google_web
+Completed in 450ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=%22I+have+a+1+inch+penis%22&it=1]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:44:08) [GET]
+  Parameters: {"it"=>"2", "q"=>"\"I have a 2 inch penis\""}
+Rendering search/google_web
+Completed in 743ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=%22I+have+a+2+inch+penis%22&it=2]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:44:09) [GET]
+  Parameters: {"it"=>"3", "q"=>"\"I have a 3 inch penis\""}
+Rendering search/google_web
+Completed in 814ms (View: 3, DB: 0) | 200 OK [http://localhost/search/google/web/?q=%22I+have+a+3+inch+penis%22&it=3]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:44:10) [GET]
+  Parameters: {"it"=>"4", "q"=>"\"I have a 4 inch penis\""}
+Rendering search/google_web
+Completed in 428ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=%22I+have+a+4+inch+penis%22&it=4]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:44:10) [GET]
+  Parameters: {"it"=>"5", "q"=>"\"I have a 5 inch penis\""}
+Rendering search/google_web
+Completed in 434ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=%22I+have+a+5+inch+penis%22&it=5]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:44:11) [GET]
+  Parameters: {"it"=>"6", "q"=>"\"I have a 6 inch penis\""}
+Rendering search/google_web
+Completed in 397ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=%22I+have+a+6+inch+penis%22&it=6]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:44:11) [GET]
+  Parameters: {"it"=>"7", "q"=>"\"I have a 7 inch penis\""}
+Rendering search/google_web
+Completed in 507ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=%22I+have+a+7+inch+penis%22&it=7]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:44:12) [GET]
+  Parameters: {"it"=>"8", "q"=>"\"I have a 8 inch penis\""}
+Rendering search/google_web
+Completed in 472ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=%22I+have+a+8+inch+penis%22&it=8]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:44:13) [GET]
+  Parameters: {"it"=>"9", "q"=>"\"I have a 9 inch penis\""}
+Rendering search/google_web
+Completed in 433ms (View: 4, DB: 0) | 200 OK [http://localhost/search/google/web/?q=%22I+have+a+9+inch+penis%22&it=9]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:44:13) [GET]
+  Parameters: {"it"=>"10", "q"=>"\"I have a 10 inch penis\""}
+Rendering search/google_web
+Completed in 432ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=%22I+have+a+10+inch+penis%22&it=10]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:44:14) [GET]
+  Parameters: {"it"=>"11", "q"=>"\"I have a 11 inch penis\""}
+Rendering search/google_web
+Completed in 390ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=%22I+have+a+11+inch+penis%22&it=11]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:44:14) [GET]
+  Parameters: {"it"=>"12", "q"=>"\"I have a 12 inch penis\""}
+Rendering search/google_web
+Completed in 367ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=%22I+have+a+12+inch+penis%22&it=12]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:44:15) [GET]
+  Parameters: {"it"=>"13", "q"=>"\"I have a 13 inch penis\""}
+Rendering search/google_web
+Completed in 650ms (View: 12, DB: 0) | 200 OK [http://localhost/search/google/web/?q=%22I+have+a+13+inch+penis%22&it=13]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:44:15) [GET]
+  Parameters: {"it"=>"14", "q"=>"\"I have a 14 inch penis\""}
+Rendering search/google_web
+Completed in 417ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=%22I+have+a+14+inch+penis%22&it=14]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:44:16) [GET]
+  Parameters: {"it"=>"15", "q"=>"\"I have a 15 inch penis\""}
+Rendering search/google_web
+Completed in 486ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=%22I+have+a+15+inch+penis%22&it=15]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:44:16) [GET]
+  Parameters: {"it"=>"16", "q"=>"\"I have a 16 inch penis\""}
+Rendering search/google_web
+Completed in 473ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=%22I+have+a+16+inch+penis%22&it=16]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:44:17) [GET]
+  Parameters: {"it"=>"17", "q"=>"\"I have a 17 inch penis\""}
+Rendering search/google_web
+Completed in 364ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=%22I+have+a+17+inch+penis%22&it=17]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:44:18) [GET]
+  Parameters: {"it"=>"18", "q"=>"\"I have a 18 inch penis\""}
+Rendering search/google_web
+Completed in 351ms (View: 4, DB: 0) | 200 OK [http://localhost/search/google/web/?q=%22I+have+a+18+inch+penis%22&it=18]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:44:18) [GET]
+  Parameters: {"it"=>"19", "q"=>"\"I have a 19 inch penis\""}
+Rendering search/google_web
+Completed in 321ms (View: 3, DB: 0) | 200 OK [http://localhost/search/google/web/?q=%22I+have+a+19+inch+penis%22&it=19]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:44:18) [GET]
+  Parameters: {"it"=>"20", "q"=>"\"I have a 20 inch penis\""}
+Rendering search/google_web
+Completed in 555ms (View: 5, DB: 0) | 200 OK [http://localhost/search/google/web/?q=%22I+have+a+20+inch+penis%22&it=20]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:44:30) [GET]
+Rendering home/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:44:31) [GET]
+Rendering home/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:44:41) [GET]
+Rendering home/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-03-23 02:44:54) [GET]
+Rendering home/index
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:44:56) [GET]
+  Parameters: {"it"=>"1", "q"=>"I have a 1 inch penis"}
+Rendering search/google_web
+Completed in 386ms (View: 3, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+1+inch+penis&it=1]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:44:56) [GET]
+  Parameters: {"it"=>"2", "q"=>"I have a 2 inch penis"}
+Rendering search/google_web
+Completed in 406ms (View: 12, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+2+inch+penis&it=2]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:44:57) [GET]
+  Parameters: {"it"=>"3", "q"=>"I have a 3 inch penis"}
+Rendering search/google_web
+Completed in 503ms (View: 4, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+3+inch+penis&it=3]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:44:58) [GET]
+  Parameters: {"it"=>"4", "q"=>"I have a 4 inch penis"}
+Rendering search/google_web
+Completed in 455ms (View: 3, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+4+inch+penis&it=4]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:44:58) [GET]
+  Parameters: {"it"=>"5", "q"=>"I have a 5 inch penis"}
+Rendering search/google_web
+Completed in 453ms (View: 5, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+5+inch+penis&it=5]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:44:59) [GET]
+  Parameters: {"it"=>"6", "q"=>"I have a 6 inch penis"}
+Rendering search/google_web
+Completed in 574ms (View: 3, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+6+inch+penis&it=6]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:44:59) [GET]
+  Parameters: {"it"=>"7", "q"=>"I have a 7 inch penis"}
+Rendering search/google_web
+Completed in 326ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+7+inch+penis&it=7]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:45:00) [GET]
+  Parameters: {"it"=>"8", "q"=>"I have a 8 inch penis"}
+Rendering search/google_web
+Completed in 602ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+8+inch+penis&it=8]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:45:00) [GET]
+  Parameters: {"it"=>"9", "q"=>"I have a 9 inch penis"}
+Rendering search/google_web
+Completed in 508ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+9+inch+penis&it=9]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:45:01) [GET]
+  Parameters: {"it"=>"10", "q"=>"I have a 10 inch penis"}
+Rendering search/google_web
+Completed in 376ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+10+inch+penis&it=10]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:45:02) [GET]
+  Parameters: {"it"=>"11", "q"=>"I have a 11 inch penis"}
+Rendering search/google_web
+Completed in 387ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+11+inch+penis&it=11]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:45:02) [GET]
+  Parameters: {"it"=>"12", "q"=>"I have a 12 inch penis"}
+Rendering search/google_web
+Completed in 349ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+12+inch+penis&it=12]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:45:02) [GET]
+  Parameters: {"it"=>"13", "q"=>"I have a 13 inch penis"}
+Rendering search/google_web
+Completed in 539ms (View: 11, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+13+inch+penis&it=13]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:45:03) [GET]
+  Parameters: {"it"=>"14", "q"=>"I have a 14 inch penis"}
+Rendering search/google_web
+Completed in 375ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+14+inch+penis&it=14]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:45:03) [GET]
+  Parameters: {"it"=>"15", "q"=>"I have a 15 inch penis"}
+Rendering search/google_web
+Completed in 638ms (View: 4, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+15+inch+penis&it=15]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:45:04) [GET]
+  Parameters: {"it"=>"16", "q"=>"I have a 16 inch penis"}
+Rendering search/google_web
+Completed in 373ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+16+inch+penis&it=16]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:45:05) [GET]
+  Parameters: {"it"=>"17", "q"=>"I have a 17 inch penis"}
+Rendering search/google_web
+Completed in 456ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+17+inch+penis&it=17]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:45:05) [GET]
+  Parameters: {"it"=>"18", "q"=>"I have a 18 inch penis"}
+Rendering search/google_web
+Completed in 390ms (View: 3, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+18+inch+penis&it=18]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:45:06) [GET]
+  Parameters: {"it"=>"19", "q"=>"I have a 19 inch penis"}
+Rendering search/google_web
+Completed in 420ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+19+inch+penis&it=19]
+
+
+Processing SearchController#google_web (for 127.0.0.1 at 2010-03-23 02:45:06) [GET]
+  Parameters: {"it"=>"20", "q"=>"I have a 20 inch penis"}
+Rendering search/google_web
+Completed in 501ms (View: 2, DB: 0) | 200 OK [http://localhost/search/google/web/?q=I+have+a+20+inch+penis&it=20]
