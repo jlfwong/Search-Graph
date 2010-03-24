@@ -85,6 +85,7 @@ function start() {
 					if (window.state["error"] == false) {
 						window.state["error"] = true;
 						alert("Failed to retrieve results. Server is busy or unavailable.");
+						$(":input").attr("disabled",false);
 					}
 				}
 			},
@@ -100,6 +101,7 @@ function searchCallback(data) {
 		if (window.state["error"] == false) {
 			window.state["error"] = true;
 			alert(data["error"]);
+			$(":input").attr("disabled",false);
 		}
 		return false;
 	}
