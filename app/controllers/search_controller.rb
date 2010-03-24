@@ -27,7 +27,8 @@ class SearchController < ApplicationController
 				:query      => query,
 				:numResults => numResults.to_i,
 				:iterator   => params['it'],
-				:error      => "none"
+				:error      => "none",
+				:source     => url
 			}.to_json
 		end
 	end

@@ -87,7 +87,7 @@ function start() {
 
 		$.ajax({
 			url      : targeturl,
-			data     : { q: query.replace("<x>",i), it: i },
+			data     : { q: query.replace(/<x>/g,i), it: i },
 			success  : searchCallback, 
 			complete : function(HttpRequest, responseCode) {
 				if (responseCode == "error") {
@@ -128,7 +128,7 @@ function searchCallback(data) {
 		$(document.createElement("tr")).append(
 			$(document.createElement("td")).append(
 				$(document.createElement("a")).attr({
-					href: engineurl + window["state"].query.replace("<x>",data["iterator"]),
+					href: engineurl + window["state"].query.replace(/<x>/g,data["iterator"]),
 					target: "_blank"
 				}).text(data["iterator"])
 			)
