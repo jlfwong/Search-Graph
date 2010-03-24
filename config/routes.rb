@@ -1,6 +1,7 @@
 ActionController::Routing::Routes.draw do |map|
 	map.root :controller => 'home', :action => 'index'
-	map.connect 'search/google/web', :controller => 'search', :action => 'google_web'
+	map.connect 'search/google/web/:method', :controller => 'search', :action => 'google_web'
+	# Method is either api or scrape
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:

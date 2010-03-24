@@ -1,15 +1,33 @@
+// GOOGLE AJAX SEARCH API
+/*
+google.load("search", "1");
+var searchControl;
+function OnLoad() {
+	searchControl = new google.search.SearchControl();
+	searchControl.addSearcher(new google.search.WebSearch());
+
+	console.log(searchControl);
+	//searchControl.setSearchStartingCallback(searchControl, function(a,b) { alert(a); });
+	searchControl.execute("fire");
+}
+google.setOnLoadCallback(OnLoad);
+*/
+// END GOOGLE AJAX SEARCH API
+
 $(document).ready(function() {
 	$("#start:input").click(start);
 	$("form#searchRequest").submit(start);
 	$(":input").attr("disabled",false);
 	$("div#progressBar").progressBar();
-	$("table#dataTable").tablesorter({sortList: [[0,0]]});
+	$("table#dataTable").tablesorter({0: {sorter: "digit"}, 1: {sorter: "digit"}});
+	$("#use_api:input").attr("checked",true);
 })
 
 var state = {
 	numRequests: 0,
 	dataReceived: [],
-	query: ""
+	query: "",
+	error: false
 };
 
 function round1(num) {
@@ -29,54 +47,83 @@ function start() {
 
 	//alert(lower + "," + upper + "," + step);
 
+
 	var numRequests = Math.floor((upper - lower)/step) + 1;
+	/*
 	if (numRequests >= 150) {
 		alert("Too many steps requested (" + numRequests + "): Maximum is 150");
 		return false;
-	}
+	}*/
 	window.state["numRequests"] = Math.floor((upper - lower)/step) + 1;
 	window.state["dataReceived"] = [];
 	window.state["query"] = query;
+	window.state["error"] = false;
 
 	$("table#dataTable tbody").html("");
 
 	$(":input").attr("disabled",true);
 	$("div#progressBar").progressBar(0);
 
+	var targeturl;
+	if ($("#use_api:input").attr("checked")) {
+		targeturl = "search/google/web/api";
+	} else {
+		targeturl = "search/google/web/scrape";
+	}
+
 	for (var i = lower; i <= upper; i+= step) {
 		/*if (typeof console != undefined) {
 			console.log("search/google/web/?q="+ query.replace("<x>",i));
 		}*/
 
-		$.get("search/google/web/",
-			{
-				q: query.replace("<x>",i),
-				it: i
+		$.ajax({
+			url      : targeturl,
+			data     : { q: query.replace("<x>",i), it: i },
+			success  : searchCallback, 
+			complete : function(HttpRequest, responseCode) {
+				if (responseCode == "error") {
+					if (window.state["error"] == false) {
+						window.state["error"] = true;
+						alert("Failed to retrieve results. Server is busy or unavailable.");
+					}
+				}
 			},
-			searchCallback, 
-			"json"
-		);
+			cache    : false,
+			dataType : "json"
+		});
 	}
 	return false;
 }
 
 function searchCallback(data) {
+	if (data["error"] != "none") {
+		if (window.state["error"] == false) {
+			window.state["error"] = true;
+			alert(data["error"]);
+		}
+		return false;
+	}
 	//alert(window.state["dataReceived"].length);
 	window.state["dataReceived"].unshift([data["iterator"],data["numResults"]]);
 	$("table#dataTable tbody").append(
 		$(document.createElement("tr")).append(
 			$(document.createElement("td")).append(
-				$(document.createElement("a")).attr(
-					"href","http://google.com/search?q=" + window["state"].query.replace("<x>",data["iterator"])
-				).text(data["iterator"])
+				$(document.createElement("a")).attr({
+					href: "http://google.com/search?q=" + window["state"].query.replace("<x>",data["iterator"]),
+					target: "_blank"
+				}).text(data["iterator"])
 			)
 		).append(
 			$(document.createElement("td")).text(data["numResults"])
 		)
 	);
+
 	
+	$("table#dataTable tr:last td").css("backgroundColor","#9d9").delay(100).animate({backgroundColor: "white"}, 800); 
+
 	$("table#dataTable").trigger("update");
 	$("table#dataTable").trigger("sorton",[[[0,0]]]);
+
 
 	$("div#progressBar").progressBar(100.0 * window.state["dataReceived"].length / window.state["numRequests"]);
 	if (window.state["dataReceived"].length == window.state["numRequests"]) {

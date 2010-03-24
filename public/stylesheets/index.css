@@ -54,10 +54,11 @@ div#dataDisplay {
 	/*margin: 10px;*/
 }
 
-div#dataDisplay table {
+div#dataDisplay table#dataTable {
 	margin-top: 10px;
 	margin-left: auto;
 	margin-right: auto;
+	width: 230px;
 }
 div#dataDisplay table,th,tr,td {
 	border-collapse: collapse;

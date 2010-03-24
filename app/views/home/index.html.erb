@@ -5,9 +5,11 @@
 <head>
 	<title>SearchGraph</title>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script type="text/javascript" src="http://www.google.com/jsapi?key=ABQIAAAAcqAJDM5PdUhFxWaNkliwVxT2yXp_ZAY8_ufC3CFXhHIE1NvwkxR4-AMBcrRfzHqAFaAvVoKdKGJmiw"></script>
 	<%= javascript_include_tag "searchgraph" %>
 	<%= javascript_include_tag "jquery.tablesorter" %>
 	<%= javascript_include_tag "jquery.progressbar" %>
+	<%= javascript_include_tag "jquery.color" %>
 	<%= stylesheet_link_tag "tablesorter" %>
 	<%= stylesheet_link_tag "index" %>
 </head>
@@ -27,6 +29,7 @@
 			<form id="searchRequest">
 				Query: <input type="text" id="query" value="&quot;Final Fantasy &lt;x&gt; is the best&quot;" size="70" /><br/>
 				Range: <input type="text" id="lower" value="1" /> to <input type="text" id="upper" value="13" /> step <input type="text" id="step" value="1" /><br/>
+				<input type="checkbox" id="use_api">Use API? <br/>
 				<input type="submit" id="start" value="Start">
 			</form>
 		</div>
