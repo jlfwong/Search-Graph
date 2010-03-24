@@ -50,7 +50,7 @@ function start() {
 
 	var numRequests = Math.floor((upper - lower)/step) + 1;
 
-	if (numRequests >= 150) {
+	if (numRequests > 150) {
 		alert("Too many steps requested (" + numRequests + "): Maximum is 150");
 		return false;
 	}
