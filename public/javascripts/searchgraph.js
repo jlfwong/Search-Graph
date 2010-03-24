@@ -20,14 +20,15 @@ $(document).ready(function() {
 	$(":input").attr("disabled",false);
 	$("div#progressBar").progressBar();
 	$("table#dataTable").tablesorter({0: {sorter: "digit"}, 1: {sorter: "digit"}});
-	$("#use_api:input").attr("checked",true);
+	//$("#use_api:input").attr("checked",true);
 })
 
 var state = {
 	numRequests: 0,
 	dataReceived: [],
 	query: "",
-	error: false
+	error: false,
+	engine: ""
 };
 
 function round1(num) {
@@ -65,11 +66,19 @@ function start() {
 	$("div#progressBar").progressBar(0);
 
 	var targeturl;
+	if ($("#engine_bing:input").attr("checked")) {
+		targeturl = "search/bing/web/api";
+		window.state["engine"] = "bing";
+	} else if ($("#engine_google:input").attr("checked")) {
+		targeturl = "search/google/web/api";
+		window.state["engine"] = "google";
+	}
+	/*
 	if ($("#use_api:input").attr("checked")) {
 		targeturl = "search/google/web/api";
 	} else {
 		targeturl = "search/google/web/scrape";
-	}
+	}*/
 
 	for (var i = lower; i <= upper; i+= step) {
 		/*if (typeof console != undefined) {
@@ -106,12 +115,20 @@ function searchCallback(data) {
 		return false;
 	}
 	//alert(window.state["dataReceived"].length);
+
+	var engineurl;
+	if (window.state["engine"] == "google") {
+		engineurl = "http://google.com/search?q=";
+	} else if (window.state["engine"] == "bing") {
+		engineurl = "http://www.bing.com/search?q=";
+	}
+
 	window.state["dataReceived"].unshift([data["iterator"],data["numResults"]]);
 	$("table#dataTable tbody").append(
 		$(document.createElement("tr")).append(
 			$(document.createElement("td")).append(
 				$(document.createElement("a")).attr({
-					href: "http://google.com/search?q=" + window["state"].query.replace("<x>",data["iterator"]),
+					href: engineurl + window["state"].query.replace("<x>",data["iterator"]),
 					target: "_blank"
 				}).text(data["iterator"])
 			)
@@ -130,6 +147,7 @@ function searchCallback(data) {
 	$("div#progressBar").progressBar(100.0 * window.state["dataReceived"].length / window.state["numRequests"]);
 	if (window.state["dataReceived"].length == window.state["numRequests"]) {
 		$("div#progressBar").progressBar(100);
+		$("table#dataTable td").css("backgroundColor","white");
 
 		dataReceived = window.state["dataReceived"].sort(function(a,b) {return a[0]-b[0]});
 		$(":input").attr("disabled",false);
@@ -140,6 +158,7 @@ function searchCallback(data) {
 		chxr = 0,<minx> - 1,<maxx> + 1 | 1, 0, <maxy>*1.1
 		chd = t: <xlist>|<ylist>
 		chs = 200x200
+		url += "&adult=off"
 
 		*/
 
@@ -173,7 +192,7 @@ function searchCallback(data) {
 
 		var chartURI = "http://chart.apis.google.com/chart?";
 		chartURI += "cht=s";
-		chartURI += "&chtt=" + window.state["query"].replace(" ","+")
+		chartURI += "&chtt=" + window.state["engine"] + " results for " + window.state["query"].replace(" ","+")
 		chartURI += "&chxt=x,x,y,y";
 		var xstep = Math.max(parseInt((maxx - minx)/20),1);
 		chartURI += "&chxl=1:|x|3:|%23+Results&chxp=1,50|3,50";

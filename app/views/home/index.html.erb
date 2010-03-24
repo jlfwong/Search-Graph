@@ -29,7 +29,10 @@
 			<form id="searchRequest">
 				Query: <input type="text" id="query" value="&quot;Final Fantasy &lt;x&gt; is the best&quot;" size="70" /><br/>
 				Range: <input type="text" id="lower" value="1" /> to <input type="text" id="upper" value="13" /> step <input type="text" id="step" value="1" /><br/>
-				<input type="checkbox" id="use_api">Use API? <br/>
+				<!-- <input type="checkbox" id="use_api">Use API? <br/> -->
+				Bing <input type="radio" name="engine" value="bing" id="engine_bing" CHECKED>
+				Google <input type="radio" name="engine" value="google" id="engine_google">
+				<br/>
 				<input type="submit" id="start" value="Start">
 			</form>
 		</div>
