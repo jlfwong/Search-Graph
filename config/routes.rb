@@ -2,6 +2,7 @@ ActionController::Routing::Routes.draw do |map|
 	map.root :controller => 'home', :action => 'index'
 	map.connect 'search/google/web/:method', :controller => 'search', :action => 'google_web'
 	map.connect 'search/bing/web/:method', :controller => 'search', :action => 'bing_web'
+	map.connect 'search/yahoo/web/:method', :controller => 'search', :action => 'yahoo_web'
 	# Method is either api or scrape
   # The priority is based upon order of creation: first created -> highest priority.
 

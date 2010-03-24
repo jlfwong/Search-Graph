@@ -6,6 +6,34 @@ require 'hpricot'
 require 'rexml/document'
 
 class SearchController < ApplicationController
+	def yahoo_web
+		query = params['q']
+		method = params['method']
+		if (method == "api")
+			key = "NZ2Pq3zV34EpOGvAw.qv01EVf1Z.eZVClPJuqEpl1qU0L4lWArruHslZ2rBS3l4PrN0-"
+			url = "http://boss.yahooapis.com/ysearch/web/v1/" + CGI::escape(query)
+			url += "?appid=" + key
+			url += "&format=json"
+			httpResponse = open(url).read
+			#xmldoc = REXML::Document.new(httpResponse)
+			#numResults = xmldoc.root.elements["resultset_web"].attributes["totalhits"]
+			result = JSON.parse(httpResponse);
+			numResults = result["ysearchresponse"]["totalhits"]
+			
+			if numResults == nil
+				numResults = 0
+			end
+
+			@response = {
+				:query      => query,
+				:numResults => numResults.to_i,
+				:iterator   => params['it'],
+				:error      => "none",
+				:source     => url
+			}.to_json
+		end
+	end
+
 	def bing_web
 		query = params['q']
 		method = params['method']

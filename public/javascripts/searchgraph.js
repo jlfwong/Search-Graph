@@ -72,7 +72,11 @@ function start() {
 	} else if ($("#engine_google:input").attr("checked")) {
 		targeturl = "search/google/web/api";
 		window.state["engine"] = "google";
+	} else if ($("#engine_yahoo:input").attr("checked")) {
+		targeturl = "search/yahoo/web/api";
+		window.state["engine"] = "yahoo";
 	}
+
 	/*
 	if ($("#use_api:input").attr("checked")) {
 		targeturl = "search/google/web/api";
@@ -121,6 +125,8 @@ function searchCallback(data) {
 		engineurl = "http://google.com/search?q=";
 	} else if (window.state["engine"] == "bing") {
 		engineurl = "http://www.bing.com/search?q=";
+	} else if (window.state["engine"] == "yahoo") {
+		engineurl = "http://search.yahoo.com/search?p=";
 	}
 
 	window.state["dataReceived"].unshift([data["iterator"],data["numResults"]]);
