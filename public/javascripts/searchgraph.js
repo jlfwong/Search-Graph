@@ -41,6 +41,11 @@ function start() {
 	var lower = parseFloat($("#lower:input").attr("value"));
 	var upper = parseFloat($("#upper:input").attr("value"));
 	var step = parseFloat($("#step:input").attr("value"));
+	if (lower >= upper) {
+		alert("Lower bound must be less than upper bound");
+		return false;
+	}
+
 	if (step <= 0) {
 		alert("Step must not be negative");
 		return false;
