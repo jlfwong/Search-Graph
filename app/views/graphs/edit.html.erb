@@ -1,0 +1,36 @@
+<h1>Editing graph</h1>
+
+<% form_for(@graph) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :query_template %><br />
+    <%= f.text_field :query_template %>
+  </p>
+  <p>
+    <%= f.label :lower_bound %><br />
+    <%= f.text_field :lower_bound %>
+  </p>
+  <p>
+    <%= f.label :upper_bound %><br />
+    <%= f.text_field :upper_bound %>
+  </p>
+  <p>
+    <%= f.label :step %><br />
+    <%= f.text_field :step %>
+  </p>
+  <p>
+    <%= f.label :chart_uri %><br />
+    <%= f.text_field :chart_uri %>
+  </p>
+  <p>
+    <%= f.label :engine %><br />
+    <%= f.text_field :engine %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @graph %> |
+<%= link_to 'Back', graphs_path %>

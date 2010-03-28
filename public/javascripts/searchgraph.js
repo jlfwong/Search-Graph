@@ -28,6 +28,9 @@ var state = {
 	dataReceived: [],
 	query: "",
 	error: false,
+	lower: 0,
+	upper: 0,
+	step: 0,
 	engine: ""
 };
 
@@ -39,8 +42,11 @@ function start() {
 	//alert("Start");
 	var query = $("#query:input").attr("value");
 	var lower = parseFloat($("#lower:input").attr("value"));
+	window.state["lower"] = lower;
 	var upper = parseFloat($("#upper:input").attr("value"));
+	window.state["upper"] = upper;
 	var step = parseFloat($("#step:input").attr("value"));
+	window.state["step"] = step;
 	if (lower >= upper) {
 		alert("Lower bound must be less than upper bound");
 		return false;
@@ -203,7 +209,7 @@ function searchCallback(data) {
 
 		var chartURI = "http://chart.apis.google.com/chart?";
 		chartURI += "cht=s";
-		chartURI += "&chtt=" + window.state["engine"] + " results for " + window.state["query"].replace(" ","+")
+		chartURI += "&chtt=" + window.state["engine"] + " results for " + window.state["query"].replace(" ","+") 
 		chartURI += "&chxt=x,x,y,y";
 		var xstep = Math.max(parseInt((maxx - minx)/20),1);
 		chartURI += "&chxl=1:|x|3:|%23+Results&chxp=1,50|3,50";
@@ -213,6 +219,25 @@ function searchCallback(data) {
 		chartURI += "&chg=" + round1(100.0 / ((maxx - minx)/xstep)) + ",10";
 
 		$("img#chartImg").attr("src",chartURI);	
+
+		$.ajax({
+			url: "graphs",
+			type: "post",
+			data: {
+				graph: {
+					query_template : window.state["query"],
+					lower_bound    : window.state["lower"],
+					upper_bound    : window.state["upper"],
+					step           : window.state["step"],
+					chart_uri      : chartURI,
+					engine         : window.state["engine"]
+				},
+				authenticity_token : $("#auth_token:input").attr("value")
+			},
+			success: function(data) {
+				console.log("graph added");
+			}
+		});
 	}
 }
 
