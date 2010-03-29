@@ -1,5 +1,5 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :graphs
+	map.resources :graphs
 
 	map.root :controller => 'home', :action => 'index'
 	map.connect 'search/google/web/:method', :controller => 'search', :action => 'google_web'

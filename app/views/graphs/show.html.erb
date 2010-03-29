@@ -1,3 +1,6 @@
+<%
+=begin
+%>
 <p>
   <b>Query template:</b>
   <%=h @graph.query_template %>
@@ -19,8 +22,7 @@
 </p>
 
 <p>
-  <b>Chart uri:</b>
-  <%=h @graph.chart_uri %>
+  <img src="<%=h @graph.chart_uri %>">
 </p>
 
 <p>
@@ -31,3 +33,6 @@
 
 <%= link_to 'Edit', edit_graph_path(@graph) %> |
 <%= link_to 'Back', graphs_path %>
+<%
+=end
+%>

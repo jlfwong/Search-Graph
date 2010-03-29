@@ -1,3 +1,11 @@
+<% for graph in @graphs %>
+	<%= image_tag graph.chart_uri %><br/>
+	<%= link_to 'Load', graph %><br/>
+	<hr>
+<% end %>
+
+<%
+=begin %>
 <h1>Listing graphs</h1>
 
 <table>
@@ -6,7 +14,6 @@
     <th>Lower bound</th>
     <th>Upper bound</th>
     <th>Step</th>
-    <th>Chart uri</th>
     <th>Engine</th>
   </tr>
 
@@ -16,7 +23,6 @@
     <td><%=h graph.lower_bound %></td>
     <td><%=h graph.upper_bound %></td>
     <td><%=h graph.step %></td>
-    <td><%=h graph.chart_uri %></td>
     <td><%=h graph.engine %></td>
     <td><%= link_to 'Show', graph %></td>
     <td><%= link_to 'Edit', edit_graph_path(graph) %></td>
@@ -28,3 +34,6 @@
 <br />
 
 <%= link_to 'New graph', new_graph_path %>
+
+<% 
+=end %>

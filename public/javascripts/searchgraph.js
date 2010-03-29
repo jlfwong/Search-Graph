@@ -20,6 +20,9 @@ $(document).ready(function() {
 	$(":input").attr("disabled",false);
 	$("div#progressBar").progressBar();
 	$("table#dataTable").tablesorter({0: {sorter: "digit"}, 1: {sorter: "digit"}});
+	if ($.browser.mozilla) {
+		$("form#searchRequest").attr("autocomplete","off");
+	}
 	//$("#use_api:input").attr("checked",true);
 })
 
@@ -78,13 +81,13 @@ function start() {
 
 	var targeturl;
 	if ($("#engine_bing:input").attr("checked")) {
-		targeturl = "search/bing/web/api";
+		targeturl = "/search/bing/web/api";
 		window.state["engine"] = "bing";
 	} else if ($("#engine_google:input").attr("checked")) {
-		targeturl = "search/google/web/api";
+		targeturl = "/search/google/web/api";
 		window.state["engine"] = "google";
 	} else if ($("#engine_yahoo:input").attr("checked")) {
-		targeturl = "search/yahoo/web/api";
+		targeturl = "/search/yahoo/web/api";
 		window.state["engine"] = "yahoo";
 	}
 
@@ -207,9 +210,11 @@ function searchCallback(data) {
 			ylist += round1(parseFloat(dataReceived[j][1])/maxy * 100)
 		}
 
+		var query = $.URLEncode(window.state["query"]);
+
 		var chartURI = "http://chart.apis.google.com/chart?";
 		chartURI += "cht=s";
-		chartURI += "&chtt=" + window.state["engine"] + " results for " + window.state["query"].replace(" ","+") 
+		chartURI += "&chtt=" + window.state["engine"] + " results for " + query;
 		chartURI += "&chxt=x,x,y,y";
 		var xstep = Math.max(parseInt((maxx - minx)/20),1);
 		chartURI += "&chxl=1:|x|3:|%23+Results&chxp=1,50|3,50";
@@ -233,9 +238,6 @@ function searchCallback(data) {
 					engine         : window.state["engine"]
 				},
 				authenticity_token : $("#auth_token:input").attr("value")
-			},
-			success: function(data) {
-				console.log("graph added");
 			}
 		});
 	}

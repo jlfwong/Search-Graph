@@ -6,19 +6,20 @@
 	<title>SearchGraph</title>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 	<script type="text/javascript" src="http://www.google.com/jsapi?key=ABQIAAAAcqAJDM5PdUhFxWaNkliwVxT2yXp_ZAY8_ufC3CFXhHIE1NvwkxR4-AMBcrRfzHqAFaAvVoKdKGJmiw"></script>
-	<%= javascript_include_tag "searchgraph" %>
 	<%= javascript_include_tag "jquery.tablesorter" %>
 	<%= javascript_include_tag "jquery.progressbar" %>
 	<%= javascript_include_tag "jquery.color" %>
+	<%= javascript_include_tag "jquery.URLEncode" %>
+	<%= javascript_include_tag "searchgraph" %>
 	<%= stylesheet_link_tag "tablesorter" %>
 	<%= stylesheet_link_tag "index" %>
 </head>
 <body>
 <div id="preload" style="display:none">
-	<img src="images/progressbar.gif" />
-	<img src="images/progressbg_red.gif" />
-	<img src="images/progressbg_orange.gif" />
-	<img src="images/progressbg_yellow.gif" />
+	<%= image_tag "progressbar.gif" %>
+	<%= image_tag "progressbg_red.gif" %>
+	<%= image_tag "progressbg_orange.gif" %>
+	<%= image_tag "progressbg_yellow.gif" %>
 </div>
 <div id="container">
 	<div id="content">
@@ -27,12 +28,25 @@
 		</div>
 		<div id="request">
 			<form id="searchRequest">
-				Query: <input type="text" id="query" value="&quot;Final Fantasy &lt;x&gt; is the best&quot;" size="70" /><br/>
-				Range: <input type="text" id="lower" value="1" /> to <input type="text" id="upper" value="13" /> step <input type="text" id="step" value="1" /><br/>
+				<%= label_tag 'query', 'Query Template' %>
+				<%= text_field_tag 'query', @graph.query_template, :size => 70 %>
+				<br/>
+				Range: 
+					<%= text_field_tag 'lower', @graph.lower_bound %>
+					 to 
+					<%= text_field_tag 'upper', @graph.upper_bound %>
+					 step 
+					<%= text_field_tag 'step', @graph.step %>
+				<br/>
 				<!-- <input type="checkbox" id="use_api">Use API? <br/> -->
-				Bing <input type="radio" name="engine" value="bing" id="engine_bing" CHECKED /> |
-				Google <input type="radio" name="engine" value="google" id="engine_google" /> |
-				Yahoo <input type="radio" name="engine" value="yahoo" id="engine_yahoo" />
+				<%= label_tag 'engine', 'Bing' %>
+				<%= radio_button_tag 'engine', 'bing', @graph.engine == 'bing', :id => "engine_bing" %>
+				|
+				<%= label_tag 'engine', 'Google' %>
+				<%= radio_button_tag 'engine', 'google', @graph.engine == 'google', :id => "engine_google" %>
+				|
+				<%= label_tag 'engine', 'Yahoo' %>
+				<%= radio_button_tag 'engine', 'yahoo', @graph.engine == 'yahoo', :id => "engine_yahoo" %>
 				<br/>
 				<input type="submit" id="start" value="Start">
 			</form>
@@ -42,7 +56,7 @@
 		</div>
 		<div id="response">
 			<div id="chart">
-				<img id="chartImg" src="http://chart.apis.google.com/chart?cht=s&chtt=%22I+have%20%3Cx%3E%20dogs%22&chxt=x,x,y,y&chxl=1:|x|3:|%26+Results&chxp=1,50|3,50&chxr=0,1,20,1|2,0,1180000,118000&chd=t:0,5.26,10.53,15.79,21.05,26.32,31.58,36.84,42.11,47.37,52.63,57.89,63.16,68.42,73.68,78.95,84.21,89.47,94.74,100|0.4,100,46.95,20.42,9.24,38.14,20.68,14.15,9.66,11.36,4.49,5.43,2.36,5.98,2.61,1.39,2.47,1.02,0.61,7.57&chs=400x400&chg=5.26,10" />
+				<%= image_tag @graph.chart_uri, :id => "chartImg" %>
 			</div>
 			<div id="dataDisplay">
 				<table id="dataTable" class="tablesorter">

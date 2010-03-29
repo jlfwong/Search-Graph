@@ -23,14 +23,14 @@ USAGE:
 				max				: 100,											// Upon 100% i'd assume, but configurable
 				showText		: true,											// show text with percentage in next to the progressbar? - default : true
 				textFormat		: 'percentage',									// Or otherwise, set to 'fraction'
-				width			: 120,											// Width of the progressbar - don't forget to adjust your image too!!!												// Image to use in the progressbar. Can be a single image too: 'images/progressbg_green.gif'
+				width			: 120,											// Width of the progressbar - don't forget to adjust your image too!!!												// Image to use in the progressbar. Can be a single image too: '/images/progressbg_green.gif'
 				height			: 12,											// Height of the progressbar - don't forget to adjust your image too!!!
 				callback		: null,											// Calls back with the config object that has the current percentage, target percentage, current image, etc
-				boxImage		: 'images/progressbar.gif',						// boxImage : image around the progress bar
+				boxImage		: '/images/progressbar.gif',						// boxImage : image around the progress bar
 				barImage		: {
-									0:	'images/progressbg_red.gif',
-									30: 'images/progressbg_orange.gif',
-									70: 'images/progressbg_green.gif'
+									0:	'/images/progressbg_red.gif',
+									30: '/images/progressbg_orange.gif',
+									70: '/images/progressbg_green.gif'
 								},
 				
 				
