@@ -34,7 +34,7 @@ var state = {
 	lower: 0,
 	upper: 0,
 	step: 0,
-	engine: ""
+	engine: "",
 };
 
 function round1(num) {
@@ -238,6 +238,24 @@ function searchCallback(data) {
 					engine         : window.state["engine"]
 				},
 				authenticity_token : $("#auth_token:input").attr("value")
+			},
+			dataType: "json",
+			success: function(data) {
+				if (data.errors != "none") {
+					alert(data.errors);
+				} else {
+					var share_url = window.base_graph_url + "/" + data.id;
+					$("#share_link:input").attr("value",share_url);
+					$("a#facebook_share").attr("href",
+						"http://www.facebook.com/sharer.php?u=" + share_url + "&t=SearchGraph " + window.state["query"]
+					);
+					$("a#twitter_share").attr("href",
+						"http://www.tiwtter.com/home?status=SearchGraph - " + window.state["query"] + " " + share_url
+					);
+					$("a#stumble_share").attr("href",
+						"http://www.stumbleupon.com/submit?url=" + share_url + "&title=SearchGraph - " + window.state["query"]
+					);
+				}
 			}
 		});
 	}

@@ -2,6 +2,10 @@ body {
 	background-color: #55d;
 }
 
+img, a {
+	border: none;
+}
+
 div#container {
 	text-align: center;	
 }
@@ -32,7 +36,13 @@ div#response {
 	/*height: 450px;*/
 	overflow: auto;
 	/*background-color: #5d5;*/
+	border-bottom: 1px solid black;
 }
+
+div#share {
+	padding: 5px;
+}
+
 
 div#chart {
 	background-color: white;

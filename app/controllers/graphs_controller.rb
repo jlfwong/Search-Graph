@@ -50,15 +50,10 @@ class GraphsController < ApplicationController
 	def create
 		@graph = Graph.new(params[:graph])
 
-		respond_to do |format|
-			if @graph.save
-				flash[:notice] = 'Graph was successfully created.'
-				format.html { redirect_to(@graph) }
-				format.xml	{ render :xml => @graph, :status => :created, :location => @graph }
-			else
-				format.html { render :action => "new" }
-				format.xml	{ render :xml => @graph.errors, :status => :unprocessable_entity }
-			end
+		if @graph.save
+			render :text => {:id => @graph.id, :errors => "none"}.to_json
+		else
+			render :text => {:errors => "couldn't save graph"}.to_json
 		end
 	end
 

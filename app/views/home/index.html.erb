@@ -13,6 +13,9 @@
 	<%= javascript_include_tag "searchgraph" %>
 	<%= stylesheet_link_tag "tablesorter" %>
 	<%= stylesheet_link_tag "index" %>
+	<script type="text/javascript">
+	var base_graph_url = "<%= url_for(:controller => 'graphs', :action => 'index', :only_path => false) %>";
+	</script>
 </head>
 <body>
 <div id="preload" style="display:none">
@@ -72,6 +75,13 @@
 					</tbody>
 				</table>
 			</div>
+		</div>
+		<div id="share">
+<% @share_url = url_for(:controller => 'graphs', :action => 'show', :id => @graph.id, :only_path => false) %>
+			Share: <%= text_field_tag 'share_link', @share_url, :size => 40 %>
+			<%= link_to image_tag("facebook.png"), "http://www.facebook.com/sharer.php?u=" + @share_url + "&t=SearchGraph - " + @graph.query_template, :id => "facebook_share"%>
+			<%= link_to image_tag("twitter.png"), "http://www.twitter.com/home?status=SearchGraph - " + @graph.query_template + " "+@share_url, :id => "twitter_share" %>
+			<%= link_to image_tag("stumble.png"), "http://www.stumbleupon.com/submit?url=" + @share_url + "&title=SearchGraph - " + @graph.query_template, :id => "stumbleupon_share" %>
 		</div>
 	</div>
 </div>
