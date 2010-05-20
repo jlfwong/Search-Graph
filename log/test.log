@@ -1,6 +1,0 @@
-
-
-
-Processing HomeController#index (for 0.0.0.0 at 2010-05-19 23:28:36) [GET]
-Rendering home/index
-Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/]

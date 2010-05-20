@@ -6,4 +6,9 @@ class HomeControllerTest < ActionController::TestCase
     get :index
     assert_response :success
   end
+
+  def test_get_jsunit
+    get :jsunit
+    assert_response :success
+  end
 end

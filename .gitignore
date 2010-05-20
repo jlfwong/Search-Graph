@@ -2,3 +2,5 @@
 log
 *.log
 tmp
+log/*.log
+public/stylesheets/
