@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100326214039) do
+ActiveRecord::Schema.define(:version => 20100326212210) do
 
   create_table "graphs", :force => true do |t|
     t.text     "query_template"
@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(:version => 20100326214039) do
     t.text     "engine"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.datetime "timestamp"
   end
 
 end
