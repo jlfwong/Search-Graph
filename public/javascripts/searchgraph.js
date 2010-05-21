@@ -3,20 +3,20 @@ SG = (function() {
 // ==============================================================================
     search: {
 // ------------------------------------------------------------------------------
-      yahoo: function(query) {
+      yahoo: function(query, callback) {
+        // data.ysearchresponse.totalhits
         $.ajax({
           url: "http://boss.yahooapis.com/ysearch/web/v1/" + query,
           data: {
             appid: "NZ2Pq3zV34EpOGvAw.qv01EVf1Z.eZVClPJuqEpl1qU0L4lWArruHslZ2rBS3l4PrN0-",
           },
           dataType: 'jsonp',
-          success: function(data) {
-            alert("Yahoo: " + data.ysearchresponse.totalhits);
-          }
+          success: callback
         });
       }, 
 // ------------------------------------------------------------------------------
-      google: function(query) {
+      google: function(query, callback) {
+        // data.responseData.cursor.estimatedResultCount
         $.ajax({
           url: "http://ajax.googleapis.com/ajax/services/search/web",
           data: {
@@ -26,13 +26,12 @@ SG = (function() {
             q: query
           },
           dataType: 'jsonp',
-          success: function(data) {
-            alert("Google: " + data.responseData.cursor.estimatedResultCount);
-          }
+          success: callback
         });
       },
 // ------------------------------------------------------------------------------
-      bing: function(query) {
+      bing: function(query, callback) {
+        // data.SearchResponse.Web.Total
         $.ajax({
           url: "http://api.search.live.net/json.aspx",
           data: {
@@ -45,9 +44,28 @@ SG = (function() {
           },
           dataType: 'jsonp',
           jsonp: "JSONCallback",
-          success: function(data) {
-            alert("Bing: " + data.SearchResponse.Web.Total);
-          }
+          success: callback
+        });
+      }
+    },
+// ==============================================================================
+    numResultsFrom: {
+// ------------------------------------------------------------------------------
+      yahoo: function(query, callback) {
+        SG.search.yahoo(query, function(data) {
+          callback(parseInt(data.ysearchresponse.totalhits), data);
+        });
+      },
+// ------------------------------------------------------------------------------
+      google: function(query, callback) {
+        SG.search.google(query, function(data) {
+          callback(parseInt(data.responseData.cursor.estimatedResultCount), data);
+        });
+      },
+// ------------------------------------------------------------------------------
+      bing: function(query, callback) {
+        SG.search.bing(query, function(data) {
+          callback(parseInt(data.SearchResponse.Web.Total), data);
         });
       }
     }
