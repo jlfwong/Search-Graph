@@ -5,8 +5,15 @@
     %title SearchGraph Javascript Unit Test
     = javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"
     = javascript_include_tag "qunit"
+
+    = javascript_include_tag "raphael","g.raphael","g.line"
+
+    = javascript_include_tag "jquery.mktag"
+    = javascript_include_tag "jquery.mktag_tests"
+    
     = javascript_include_tag "searchgraph"
     = javascript_include_tag "searchgraph_tests"
+
     = stylesheet_link_tag "qunit"
   %body
     %h1#qunit-header QUnit Test for searchgraph.js

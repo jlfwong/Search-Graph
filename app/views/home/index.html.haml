@@ -4,4 +4,85 @@
   %head
     %title SearchGraph
     = javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"
+    = javascript_include_tag "jquery.mktag"
+    = javascript_include_tag "raphael","g.raphael","g.line"
     = javascript_include_tag "searchgraph"
+    = stylesheet_link_tag "http://fonts.googleapis.com/css?family=Lobster"
+    = stylesheet_link_tag "searchgraph"
+
+  %body
+    .shadowbg_filler
+    .container
+      .shadowbg_header
+      .content
+        .header
+          %h1.title SearchGraph 
+        .form
+          %form#SG_input
+            .form_element
+              .label= label_tag 'query_template', 'Query Template'
+              .value= text_field_tag 'query_template'
+            .three_columns
+              .column
+                .form_element
+                  .label= label_tag 'lower_bound', 'Lower Bound'
+                  .value= text_field_tag 'lower_bound'
+              .column
+                .form_element
+                  .label= label_tag 'upper_bound', 'Upper Bound'
+                  .value= text_field_tag 'upper_bound'
+              .column.last
+                .form_element
+                  .label= label_tag 'step', 'Step'
+                  .value= text_field_tag 'step'
+              .clear
+            .form_element_group_header
+              Engines
+            .four_columns
+              .column
+                .form_element.check
+                  .value= check_box_tag 'google', '1', true
+                  .label= label_tag 'google', 'Google'
+              .column
+                .form_element.check
+                  .value= check_box_tag 'yahoo', '1', true
+                  .label= label_tag 'yahoo', 'Yahoo'
+              .column
+                .form_element.check
+                  .value= check_box_tag 'bing', '1', true
+                  .label= label_tag 'bing', 'Bing'
+              .column
+                .form_element
+                  .value= submit_tag 'Submit'
+              .clear
+                
+                
+        .progress
+          #SG_progress
+
+        .columns
+          .table
+            %table#SG_table
+              %thead
+                %tr
+                  %th Engine
+                  %th &lt;x&gt;
+                  %th # Results
+              %tbody
+                %tr
+                  %td Google
+                  %td 1
+                  %td 123123123
+                %tr
+                  %td Bing
+                  %td 1
+                  %td 123123123
+                %tr
+                  %td Yahoo
+                  %td 1
+                  %td 123123123
+          .graph
+            #SG_graph
+              = image_tag 'layout/test_graph.png'
+        .clear
+        .footer
